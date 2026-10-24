@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fischereiverein Metten e.V. – Website Demo</title>
+<meta name="description" content="Website-Konzept für den Fischereiverein Metten e.V.">
+<style>
+:root{
+  --forest:#17382f; --forest2:#0e2922; --sand:#e8dfcf; --cream:#f7f5ef;
+  --ink:#17211d; --muted:#66736d; --line:#d9ddd7; --white:#fff;
+  --max:1180px; --radius:22px;
+}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{max-width:var(--max);margin:auto;padding:0 24px}
+nav{position:absolute;top:0;left:0;right:0;z-index:10;color:#fff}
+.navin{height:82px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:12px;align-items:center;font-weight:800;letter-spacing:.02em}
+.mark{width:42px;height:42px;border:1px solid rgba(255,255,255,.55);border-radius:50%;display:grid;place-items:center;font-size:12px;letter-spacing:.08em}
+.links{display:flex;gap:25px;font-size:14px;font-weight:650}
+.cta{background:#fff;color:var(--forest);padding:12px 17px;border-radius:999px;font-weight:800}
+.hero{min-height:760px;position:relative;color:#fff;display:flex;align-items:end;overflow:hidden;background:
+linear-gradient(90deg,rgba(8,27,22,.82),rgba(8,27,22,.22)),
+url("https://file1.hpage.com/003661/87/bilder/aicha_weiher_2.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:28%;background:linear-gradient(transparent,rgba(8,20,16,.55))}
+.hero .wrap{position:relative;z-index:2;padding-bottom:85px}
+.kicker{font-size:13px;text-transform:uppercase;letter-spacing:.18em;font-weight:800;opacity:.85}
+h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(48px,7vw,88px);line-height:.98;max-width:850px;margin:18px 0}
+.hero p{font-size:20px;max-width:650px;color:rgba(255,255,255,.86);margin:0 0 30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:14px 19px;border-radius:999px;font-weight:800}.primary{background:#fff;color:var(--forest)}.ghost{border:1px solid rgba(255,255,255,.45);color:#fff}
+.intro{padding:88px 0 50px}.eyebrow{color:#547066;font-weight:800;text-transform:uppercase;letter-spacing:.14em;font-size:12px}
+h2{font-family:Georgia,serif;font-size:clamp(36px,5vw,62px);font-weight:500;line-height:1.05;margin:12px 0 20px}
+.lead{font-size:18px;color:var(--muted);max-width:720px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:42px}
+.stat{background:#fff;border:1px solid var(--line);padding:25px;border-radius:18px}.stat b{display:block;font-size:31px;color:var(--forest)}.stat span{font-size:13px;color:var(--muted)}
+.section{padding:75px 0}.dark{background:var(--forest);color:#fff}.dark .lead{color:#cbd6d1}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}
+.photo{min-height:430px;border-radius:var(--radius);background:center/cover no-repeat}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.card .photo{border-radius:0;min-height:280px}.pad{padding:28px}
+.tag{display:inline-block;background:#edf1ed;color:#416056;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800;margin-bottom:10px}
+h3{font-family:Georgia,serif;font-size:34px;font-weight:500;margin:5px 0 10px}
+.muted{color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.chip{border:1px solid var(--line);padding:7px 10px;border-radius:999px;font-size:12px}
+.watergrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}
+.water .photo{height:300px;min-height:300px}
+.membership{background:var(--sand);border-radius:28px;padding:48px}
+.price{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:28px 0}
+.price .box{background:rgba(255,255,255,.62);padding:20px;border-radius:16px}.box strong{display:block;font-size:27px;color:var(--forest)}.box small{color:#64706a}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}.step{background:#fff;padding:25px;border-radius:18px;border:1px solid var(--line)}.num{font-weight:900;color:#698278}
+footer{background:var(--forest2);color:#d7e0dc;padding:38px 0}.foot{display:flex;justify-content:space-between;gap:25px;align-items:center}.demo{font-size:11px;opacity:.7;max-width:720px}
+@media(max-width:850px){.links{display:none}.hero{min-height:680px}.stats,.grid2,.watergrid,.price,.steps{grid-template-columns:1fr 1fr}.grid2 .photo{min-height:320px}}
+@media(max-width:560px){.stats,.grid2,.watergrid,.price,.steps{grid-template-columns:1fr}.hero .wrap{padding-bottom:55px}.hero p{font-size:17px}.intro,.section{padding:58px 0}.membership{padding:28px}.foot{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+
+<div style="position:fixed;right:18px;bottom:18px;z-index:99;background:#17382f;color:#fff;padding:12px 16px;border-radius:999px;font:700 12px Inter,system-ui;box-shadow:0 10px 30px rgba(0,0,0,.18)">
+  DEMO · Entwurf für den Fischereiverein Metten
+</div>
+
+
+<nav><div class="wrap navin">
+  <div class="brand"><span class="mark">FV</span><span>Fischereiverein Metten e.V.</span></div>
+  <div class="links"><a href="#verein">Verein</a><a href="#gewaesser">Gewässer</a><a href="#jugend">Jugend</a><a href="#mitglied">Mitglied werden</a><a class="cta" href="#kontakt">Kontakt</a></div>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Website-Konzept · Fischereiverein Metten e.V.</div>
+    <h1>Gemeinsam für unsere Gewässer.</h1>
+    <p>Mit Leidenschaft für die Fischerei, Verantwortung für die Natur und einem starken Vereinsleben.</p>
+    <div class="actions"><a class="btn primary" href="#mitglied">Mitglied werden</a><a class="btn ghost" href="#gewaesser">Unsere Gewässer entdecken</a></div>
+  </div>
+</header>
+
+<section class="intro" id="verein"><div class="wrap">
+  <div class="eyebrow">Der Verein</div>
+  <h2>Die Inhalte sind da.<br>Jetzt bekommen sie die passende Bühne.</h2>
+  <p class="lead">Der Fischereiverein Metten e.V. ist seit 1980 eingetragen und wird aktuell unter anderem mit Simon Steininger und Günter Nagl als Vorstand geführt. Die neue Website macht aus verstreuten Informationen eine klare digitale Anlaufstelle.</p>
+  <div class="stats">
+    <div class="stat"><b>1980</b><span>Eintragung des Vereins</span></div>
+    <div class="stat"><b>2</b><span>Vereinsgewässer</span></div>
+    <div class="stat"><b>3,6 ha</b><span>Wasserfläche zusammen</span></div>
+    <div class="stat"><b>10</b><span>Jugendliche laut Vereinsseite</span></div>
+  </div>
+</div></section>
+
+<section class="section dark" id="gewaesser"><div class="wrap">
+  <div class="eyebrow">Unsere Gewässer</div>
+  <h2>Wasser. Ruhe. Natur.</h2>
+  <p class="lead">Zwei Vereinsgewässer, übersichtlich erklärt – inklusive Größe, Fischbestand und wichtigen Hinweisen.</p>
+  <div class="watergrid">
+    <article class="card water">
+      <div class="photo" style="background-image:url('https://file1.hpage.com/003661/87/bilder/aicha_weiher_2.jpg')"></div>
+      <div class="pad"><span class="tag">ca. 3 ha</span><h3>Aicha Weiher</h3><p class="muted">Karpfen, Hecht, Zander und Wels. Rundum gut zugänglich; ein barrierefreier Angelplatz wurde 2013 von Vereinsmitgliedern errichtet.</p><div class="chips"><span class="chip">Karpfen</span><span class="chip">Hecht</span><span class="chip">Zander</span><span class="chip">Wels</span></div></div>
+    </article>
+    <article class="card water">
+      <div class="photo" style="background-image:url('https://file1.hpage.com/003661/87/bilder/loham_weiher_1_vorschaubild.jpg')"></div>
+      <div class="pad"><span class="tag">ca. 0,6 ha</span><h3>Loham Weiher</h3><p class="muted">Das kleinere Vereinsgewässer mit Karpfen, Schleie, Hecht und Zander. Auch Wels wird auf der Vereinsseite erwähnt.</p><div class="chips"><span class="chip">Karpfen</span><span class="chip">Schleie</span><span class="chip">Hecht</span><span class="chip">Zander</span></div></div>
+    </article>
+  </div>
+</div></section>
+
+<section class="section" id="jugend"><div class="wrap">
+  <div class="grid2">
+    <div class="photo" style="background-image:url('https://file1.hpage.com/003661/87/bilder/gruppe.jpg')"></div>
+    <div class="pad" style="padding:20px 8px 20px 20px">
+      <div class="eyebrow">Jugend</div><h2>Angeln lernen. Natur erleben.</h2>
+      <p class="lead">Die Jugendabteilung umfasst laut Vereinsseite momentan 10 Jugendliche. Sie treffen sich monatlich zu gemeinsamen Aktivitäten. Im Mittelpunkt stehen waidgerechtes Angeln und aktiver Naturschutz.</p>
+      <a class="btn" style="display:inline-block;background:var(--forest);color:#fff;margin-top:12px" href="#kontakt">Jugendkontakt</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap"><div class="membership" id="mitglied">
+  <div class="eyebrow">Mitglied werden</div><h2>Transparent statt kompliziert.</h2>
+  <p class="lead">Die wichtigsten Voraussetzungen und Kosten stehen direkt auf einer Seite. So weiß man vor dem Kontakt, was benötigt wird.</p>
+  <div class="price">
+    <div class="box"><strong>200 €</strong><small>Aufnahmegebühr</small></div>
+    <div class="box"><strong>30 €</strong><small>Jahresbeitrag</small></div>
+    <div class="box"><strong>130 €</strong><small>Jahreserlaubnisschein</small></div>
+  </div>
+  <p class="muted">Vorausgesetzt werden Fischerprüfung und gültiger staatlicher Fischereischein. Aktive Mitglieder unter 63 Jahren leisten grundsätzlich 8 Arbeitsstunden jährlich. Die Aufnahme entscheidet der geschäftsführende Vorstand.</p>
+  <div class="actions" style="margin-top:22px"><a class="btn" style="background:var(--forest);color:#fff" href="#kontakt">Aufnahme anfragen</a></div>
+</div></div></section>
+
+<section class="section dark" id="kontakt"><div class="wrap">
+  <div class="eyebrow">Der nächste Schritt</div><h2>Alles Wichtige.<br>Auf einen Blick.</h2>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><h3>Entdecken</h3><p class="muted">Gewässer, Jugend und Vereinsleben kennenlernen.</p></div>
+    <div class="step"><div class="num">02</div><h3>Verstehen</h3><p class="muted">Voraussetzungen, Kosten und Regeln ohne Suchen finden.</p></div>
+    <div class="step"><div class="num">03</div><h3>Kontakt</h3><p class="muted">Direkt mit dem Verein oder Ansprechpartnern in Verbindung treten.</p></div>
+  </div>
+  <p style="margin-top:34px;color:#d4dfda">Kontakt: Simon Steininger · 0151 17388328 · fvmetten@aol.com</p>
+</div></section>
+
+<footer><div class="wrap foot">
+  <div><strong>Fischereiverein Metten e.V.</strong><div class="demo">Website-Demo – nicht die offizielle Vereinswebsite.</div></div>
+  <div class="demo">Fotos stammen aus der öffentlich zugänglichen Vereinswebsite. Vor Veröffentlichung: Bildrechte und offizielles Vereinslogo durch den Verein freigeben lassen.</div>
+</div></footer>
+</body></html>
