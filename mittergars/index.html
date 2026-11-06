@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Unveröffentlichter Website-Entwurf für den Fischereiverein Mittergars e.V.">
+  <title>Fischereiverein Mittergars e.V. – Website-Entwurf</title>
+  <style>
+    :root{--ink:#18362f;--deep:#102a25;--green:#286b57;--mint:#e7f0e9;--sand:#e7c78e;--paper:#f6f7f2;--white:#fff;--muted:#61736b}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}
+    a{color:inherit}
+    .draft{background:#fff1d6;color:#5d4213;text-align:center;padding:10px 18px;font-size:.88rem;font-weight:700;border-bottom:1px solid #ead4a4}
+    header{background:linear-gradient(125deg,var(--deep),#275f4d);color:white;padding:26px max(6vw,22px) 84px}
+    nav{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .brand{font-weight:800;letter-spacing:.02em;font-size:1.05rem}
+    nav a{color:#eaf3ed;text-decoration:none;margin-left:20px;font-size:.94rem}
+    .hero{max-width:1120px;margin:82px auto 0;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:#c8dfd1;font-weight:800}
+    h1{font-size:clamp(2.7rem,6vw,5.4rem);line-height:1.02;letter-spacing:-.04em;margin:15px 0 22px;max-width:760px}
+    .hero p{font-size:1.12rem;max-width:670px;color:#e0eee5}
+    .cta{display:inline-block;margin-top:18px;background:var(--sand);color:var(--deep);padding:13px 19px;border-radius:999px;text-decoration:none;font-weight:800}
+    .hero-art{min-height:260px;border:1px solid #ffffff40;border-radius:28px;background:radial-gradient(circle at 70% 25%,#9bbda2 0 8%,transparent 9%),linear-gradient(145deg,#8bb39b33,#ffffff08);display:flex;align-items:end;padding:24px;position:relative;overflow:hidden}
+    .hero-art:before{content:"";position:absolute;width:250px;height:250px;border:1px solid #ffffff40;border-radius:50%;right:-60px;top:-70px;box-shadow:0 0 0 28px #ffffff0b,0 0 0 58px #ffffff08}
+    .hero-art span{position:relative;font-size:.9rem;color:#e5f1e8;max-width:180px}
+    main{max-width:1120px;margin:auto;padding:0 22px}
+    section{padding:68px 0}
+    .section-head{max-width:720px;margin-bottom:28px}
+    .kicker{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);font-weight:800}
+    h2{font-size:clamp(1.8rem,3.5vw,2.7rem);line-height:1.15;margin:8px 0 14px;letter-spacing:-.025em}
+    .lead{font-size:1.05rem;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--white);border:1px solid #e2e9e2;border-radius:20px;padding:25px;box-shadow:0 12px 34px #17382c0a}
+    .card h3{margin:0 0 8px;font-size:1.2rem}
+    .card p{margin:0;color:var(--muted)}
+    .number{display:inline-flex;width:38px;height:38px;border-radius:50%;align-items:center;justify-content:center;background:var(--mint);color:var(--green);font-weight:800;margin-bottom:16px}
+    .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .year{font-size:.8rem;font-weight:800;color:var(--green);letter-spacing:.08em}
+    .board{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .person{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid #e5ebe5;padding:12px 0}
+    .person:last-child{border-bottom:0}
+    .person strong{font-weight:750}
+    .person span{color:var(--muted);text-align:right}
+    .contact{background:var(--deep);color:white;border-radius:28px;padding:38px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+    .contact p{color:#d7e5db}
+    .contact a{color:#f2d7a7;font-weight:800;text-decoration:none}
+    footer{padding:28px 22px 42px;text-align:center;color:var(--muted);font-size:.85rem}
+    .note{font-size:.82rem;color:#64756c}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;margin-top:55px}.hero-art{min-height:170px}.grid,.timeline,.board,.contact{grid-template-columns:1fr}nav a{margin:0 14px 0 0}.contact{padding:28px}}
+  </style>
+</head>
+<body>
+  <div class="draft">Unveröffentlichter Demo-Entwurf · keine offizielle Vereinswebsite</div>
+  <header>
+    <nav aria-label="Hauptnavigation">
+      <div class="brand">Fischereiverein Mittergars e.V.</div>
+      <div><a href="#verein">Verein</a><a href="#orte">Orte</a><a href="#leben">Vereinsleben</a><a href="#kontakt">Kontakt</a></div>
+    </nav>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Mittergars · Oberbayern</div>
+        <h1>Gemeinschaft am Wasser.</h1>
+        <p>Ein erster digitaler Entwurf für den Fischereiverein Mittergars e.V. – mit Informationen zum Verein, zur Fischerhütte und zum Vereinsleben an einem gut auffindbaren Ort.</p>
+        <a class="cta" href="#kontakt">Kontakt zum Vorstand</a>
+      </div>
+      <div class="hero-art" aria-label="Abstrakte Illustration in Naturfarben">
+        <span>Fischerhütte · Dorfweiher · Fischweiher</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="verein">
+      <div class="section-head">
+        <div class="kicker">Der Verein</div>
+        <h2>Ein Verein mit Geschichte und neuer Führung</h2>
+        <p class="lead">Der Fischereiverein Mittergars ist seit 1980 im Dorfleben verankert. Die jüngste veröffentlichte Vereinsmeldung berichtet von einer neuen Vorstandschaft nach der Jahreshauptversammlung im November 2025.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="number">01</div><h3>Fischerhütte</h3><p>Die Fischerhütte ist ein wiederkehrender Treffpunkt in den veröffentlichten Berichten des Vereins.</p></article>
+        <article class="card"><div class="number">02</div><h3>Gewässer</h3><p>Die Vereinsseite der Dorfgemeinschaft zeigt Bilder der neuen und alten Fischerhütte, des Dorfweihers und der Fischweiher.</p></article>
+        <article class="card"><div class="number">03</div><h3>Gemeinschaft</h3><p>Dokumentierte Beiträge berichten unter anderem vom Fischerfest, vom Steckerlfischessen und von der Jahreshauptversammlung.</p></article>
+      </div>
+    </section>
+    <section id="orte">
+      <div class="section-head">
+        <div class="kicker">Rund um den Verein</div>
+        <h2>Fischerhütte und Weiher</h2>
+        <p class="lead">Die öffentlich zugängliche Vereinsvorstellung auf der Dorfgemeinschaftsseite benennt diese Orte ausdrücklich. Hier könnten künftig – nach Freigabe durch den Verein – weitere geprüfte Informationen, Regeln und Hinweise ergänzt werden.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Neue Fischerhütte</h3><p>Als Bildmotiv und Treffpunkt in der Vereinsvorstellung dokumentiert.</p></article>
+        <article class="card"><h3>Dorfweiher</h3><p>In der Vereinsvorstellung der Dorfgemeinschaft als eigener Bildbereich aufgeführt.</p></article>
+        <article class="card"><h3>Fischweiher</h3><p>In der Vereinsvorstellung als weiterer Bereich gezeigt; konkrete Nutzungs- und Angelinformationen sind hier bewusst noch nicht ergänzt.</p></article>
+      </div>
+    </section>
+    <section id="leben">
+      <div class="section-head">
+        <div class="kicker">Aus dem Vereinsleben</div>
+        <h2>Was öffentlich dokumentiert ist</h2>
+        <p class="lead">Die folgenden Einträge sind historische Beiträge und keine Ankündigung kommender Termine.</p>
+      </div>
+      <div class="timeline">
+        <article class="card"><div class="year">NOVEMBER 2025 · BERICHT MÄRZ 2026</div><h3>Jahreshauptversammlung und neue Führung</h3><p>Die Versammlung fand am 27. November 2025 im Schützenheim statt. Die neue Vorstandschaft wurde im März 2026 auf der Dorfgemeinschaftsseite vorgestellt.</p></article>
+        <article class="card"><div class="year">MAI 2024</div><h3>Steckerlfisch</h3><p>Ein Beitrag berichtet vom traditionellen Steckerlfischessen an der Fischerhütte am Karfreitag.</p></article>
+        <article class="card"><div class="year">AUGUST 2023</div><h3>Fischerfest in Mittergars</h3><p>Der Verein berichtete über das Fischerfest als festen Bestandteil des Ortsgeschehens.</p></article>
+      </div>
+    </section>
+    <section>
+      <div class="section-head">
+        <div class="kicker">Vorstandschaft</div>
+        <h2>Die veröffentlichte Vorstandsliste</h2>
+      </div>
+      <div class="board">
+        <div class="card">
+          <div class="person"><strong>1. Vorstand</strong><span>Christof Palmer</span></div>
+          <div class="person"><strong>2. Vorstand</strong><span>Harald Bauernschmid</span></div>
+          <div class="person"><strong>Schriftführer</strong><span>Richard Daffner</span></div>
+          <div class="person"><strong>Kassier</strong><span>Andrea Daffner</span></div>
+        </div>
+        <div class="card">
+          <div class="person"><strong>Gewässerwart</strong><span>Bernhard Fischer</span></div>
+          <div class="person"><strong>Beisitzer</strong><span>Tom Arndt</span></div>
+          <div class="person"><strong>Beisitzer</strong><span>Christine Hüfner</span></div>
+          <div class="person"><strong>Weitere Beisitzer</strong><span>öffentlich gelistet</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="kontakt">
+      <div class="contact">
+        <div>
+          <div class="kicker" style="color:#c8dfd1">Kontakt</div>
+          <h2>Fragen zum Fischereiverein?</h2>
+          <p>Der öffentliche Vereinsüberblick der Dorfgemeinschaft Mittergars nennt Christof Palmer als Ansprechpartner des Fischereivereins.</p>
+        </div>
+        <div>
+          <h3 style="margin-top:0">Christof Palmer</h3>
+          <p>1. Vorstand</p>
+          <p><a href="tel:+491709060818">0170 / 9060818</a></p>
+        </div>
+      </div>
+    </section>
+    <p class="note">Hinweis: Dieser Entwurf ist eine unveröffentlichte Konzeptseite. Er ist nicht vom Fischereiverein Mittergars e.V. freigegeben oder als offizielle Vereinsseite zu verstehen. Inhalte und Ansprechpartner beruhen auf öffentlich zugänglichen Beiträgen der Dorfgemeinschaft Mittergars und sollten vor einer Veröffentlichung vom Verein geprüft werden.</p>
+  </main>
+  <footer>Fischereiverein Mittergars e.V. · unveröffentlichter Website-Entwurf</footer>
+</body>
+</html>
